@@ -42,6 +42,13 @@
             <type>amp</type>
         </dependency>
         -->
+
+		<dependency>
+			<groupId>de.fmaul</groupId>
+			<artifactId>javascript-console-share</artifactId>
+			<version>0.6</version>
+			<type>amp</type>
+		</dependency>
     </dependencies>
 
     <build>
@@ -107,6 +114,12 @@
                             <type>amp</type>
                         </overlay>
                         -->
+
+						<overlay>
+							<groupId>de.fmaul</groupId>
+							<artifactId>javascript-console-share</artifactId>
+							<type>amp</type>
+						</overlay>
                     </overlays>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
