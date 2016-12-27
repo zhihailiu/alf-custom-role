@@ -19,6 +19,9 @@
         </property>
     </bean>
 	
-
+    <!-- Bootstrap the permission model -->
+    <bean id="acme-permissionDefinitions" parent="permissionModelBootstrap">
+        <property name="model" value="alfresco/module/${project.artifactId}/model/acmePermissionDefinitions.xml" />
+    </bean>
 
 </beans>

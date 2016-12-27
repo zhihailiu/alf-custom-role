@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE permissions >
+
+<permissions>
+
+    <!-- Namespaces used in type references -->
+    <namespaces>
+        <namespace uri="http://www.alfresco.org/model/system/1.0"
+            prefix="sys" />
+        <namespace uri="http://www.alfresco.org/model/content/1.0"
+            prefix="cm" />
+        <namespace uri="http://www.alfresco.org/model/site/1.0"
+            prefix="st" />
+    </namespaces>
+
+    <!-- AcmeCollaborator with Delete permission. The Collaborator permission is through subgrouping SiteCollaborator group. -->
+    <permissionSet type="cm:content" expose="selected">
+        <permissionGroup name="AcmeCollaborator" allowFullControl="false" expose="true">
+            <includePermissionGroup permissionGroup="Delete" type="sys:base" />
+        </permissionGroup>
+    </permissionSet>
+   
+</permissions>
