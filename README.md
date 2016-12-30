@@ -32,6 +32,7 @@ application/json
 }
 ```
 Note that the zones must be set as ["AUTH.ALF", "APP.SHARE"]. The zones are different from groups manually created in Share Admin Tools. They belong to APP.DEFAULT zone.
+
 2. Set permission
 var swsdpSite = search.findNode("workspace://SpacesStore/..."); // nodeRef of site swsdp
 swsdpSite.setPermission("SiteAcmeCollaborator", "GROUP_site_swsdp_SiteAcmeCollaborator");
