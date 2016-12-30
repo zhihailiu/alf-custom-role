@@ -19,6 +19,7 @@ Alfresco uses permissionSet st:site definition as a template. For a new site cre
 - it shows up in Set roles in Site Membership > Add User
 
 However, an old site, for example swsdp, created before this module is deployed will not have the role. You can use a webscript to create a group, then use JavaScript to set the permission at site level.
+
 1. Add group
 http://localhost:8080/alfresco/s/com/acme/group/groupzone
 POST
@@ -32,6 +33,7 @@ application/json
 }
 ```
 Note that the zones must be set as ["AUTH.ALF", "APP.SHARE"]. The zones are different from groups manually created in Share Admin Tools. They belong to APP.DEFAULT zone.
+
 2. Set permission
 ```
 var swsdpSite = search.findNode("workspace://SpacesStore/..."); // nodeRef of site swsdp
