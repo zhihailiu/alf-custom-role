@@ -1,0 +1,8 @@
+<webscript>
+    <shortname>Group Zone Webscript</shortname>
+    <description>Create group in a zone</description>
+    <url>/com/acme/group/groupzone</url>
+    <authentication>admin</authentication>
+    <format default="json"></format>
+    <transaction>required</transaction>
+</webscript>

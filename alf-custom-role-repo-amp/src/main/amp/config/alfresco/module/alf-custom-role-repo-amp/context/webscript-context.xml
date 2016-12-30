@@ -21,4 +21,9 @@
 		  class="com.acme.demoamp.HelloWorldWebScript"
 		  parent="webscript">
 	</bean>
+
+    <bean id="webscript.com.acme.group.groupzone.post" class="com.acme.group.GroupZoneWebScript" parent="webscript">
+        <property name="authorityService" ref="AuthorityService"/>
+    </bean>
+    
 </beans>
